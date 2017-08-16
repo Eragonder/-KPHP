@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    align-content: center;
+}
+
+body {
+    background-image: url(../img/images/h1.jpg);
+    background-attachment: fixed;
+    align-content: center;
+    text-align: center;
+}
+
+h1{
+    font-size: 3em;
+    color: white;
+    position: relative;
+    margin: 0 auto;
+
+}
+.galerie {
+    position: absolute;
+    width: 33%;
+    left: 33%;
+    height: 200%;
+    background-color: rgba(15,15,15,0.6);
+    border-radius: 10px;
+    margin: 20px;
+}
+figcaption {
+    color: white;
+}
+a {
+    position: relative;
+    margin: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+}
+
+a:hover {
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+.img {
+    position: relative;
+    border-radius: 10px;
+    margin: auto;
+
+}
+
+
+
+@-webkit-keyframes pulse {
+     25% {
+         -webkit-transform: scale(1.1);
+         transform: scale(1.1);
+     }
+     75% {
+         -webkit-transform: scale(0.9);
+         transform: scale(0.9);
+     }
+ }
+@keyframes pulse {
+    25% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    75% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+}
